@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ljuba/Git/Grid/step-49/step-49.cc
+deal.II/grid/tria.h
+-
+deal.II/grid/tria_accessor.h
+-
+deal.II/grid/tria_iterator.h
+-
+deal.II/grid/grid_generator.h
+-
+deal.II/grid/grid_tools.h
+-
+deal.II/grid/manifold_lib.h
+-
+deal.II/grid/grid_out.h
+-
+deal.II/grid/grid_in.h
+-
+iostream
+-
+fstream
+-
+map
+-
+
