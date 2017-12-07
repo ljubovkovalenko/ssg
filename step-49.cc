@@ -57,7 +57,7 @@ void print_mesh_info(const Triangulation<dim> &triangulation,
 
 Point<3> grid_5_transform (const Point<3> &in)
 {
-  return Point<3>(in(0),in(1),std::sqrt(-in(1)*in(1)-in(0)*in(0)+2.0));
+  return Point<3>(in(0),in(1),std::sqrt(-in(1)*in(1)-in(0)*in(0)+25.0));
 }
 
 void grid_5()
@@ -69,8 +69,8 @@ void grid_5()
   repetitions[2] = 4;
   GridGenerator::subdivided_hyper_rectangle (triangulation,
                                              repetitions,
-                                             Point<3>(0.0,0.0,0.0),
-                                             Point<3>(10.0,5.0,5.0),true);
+                                             Point<3>(-5.0,-5.0,-5.0),
+                                             Point<3>(5.0,5.0,5.0),true);
 
   GridTools::transform (&grid_5_transform, triangulation);
   print_mesh_info (triangulation, "grid-5.vtk");
