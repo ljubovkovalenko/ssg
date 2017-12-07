@@ -73,7 +73,7 @@ void grid_5()
                                              Point<3>(5.0,5.0,5.0),true);
 
   GridTools::transform (&grid_5_transform, triangulation);
-  print_mesh_info (triangulation, "grid-5.vtk");
+  print_mesh_info (triangulation, "grid-5.eps");
 }
 
 
