@@ -1,8 +1,8 @@
 MESSAGE(
 "###
 #
-#  Project  step-49  set up with  deal.II-9.0.0-pre  found at
-#      /usr
+#  Project  step-49  set up with  deal.II-8.5.1  found at
+#      /home/ljuba/deal.ii-candi/deal.II-v8.5.1
 #
 #  CMAKE_BUILD_TYPE:          Debug
 #

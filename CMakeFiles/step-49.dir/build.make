@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_SOURCE_DIR = /home/ljuba/dealii/examples/step-49
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_BINARY_DIR = /home/ljuba/dealii/examples/step-49
 
 # Include any dependencies generated for this target.
 include CMakeFiles/step-49.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/step-49.dir/flags.make
 
 CMakeFiles/step-49.dir/step-49.cc.o: CMakeFiles/step-49.dir/flags.make
 CMakeFiles/step-49.dir/step-49.cc.o: step-49.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljuba/Git/Grid/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/step-49.dir/step-49.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/step-49.dir/step-49.cc.o -c /home/ljuba/Git/Grid/step-49/step-49.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljuba/dealii/examples/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/step-49.dir/step-49.cc.o"
+	/usr/bin/mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/step-49.dir/step-49.cc.o -c /home/ljuba/dealii/examples/step-49/step-49.cc
 
 CMakeFiles/step-49.dir/step-49.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/step-49.dir/step-49.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljuba/Git/Grid/step-49/step-49.cc > CMakeFiles/step-49.dir/step-49.cc.i
+	/usr/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljuba/dealii/examples/step-49/step-49.cc > CMakeFiles/step-49.dir/step-49.cc.i
 
 CMakeFiles/step-49.dir/step-49.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/step-49.dir/step-49.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljuba/Git/Grid/step-49/step-49.cc -o CMakeFiles/step-49.dir/step-49.cc.s
+	/usr/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljuba/dealii/examples/step-49/step-49.cc -o CMakeFiles/step-49.dir/step-49.cc.s
 
 CMakeFiles/step-49.dir/step-49.cc.o.requires:
 
@@ -90,106 +90,76 @@ step__49_EXTERNAL_OBJECTS =
 
 step-49: CMakeFiles/step-49.dir/step-49.cc.o
 step-49: CMakeFiles/step-49.dir/build.make
-step-49: /usr/lib/x86_64-linux-gnu/libdeal.ii.g.so.9.0.0-pre
+step-49: /home/ljuba/deal.ii-candi/deal.II-v8.5.1/lib/libdeal_II.g.so.8.5.1
+step-49: /home/ljuba/deal.ii-candi/p4est-2.0/DEBUG/lib/libp4est.so
+step-49: /home/ljuba/deal.ii-candi/p4est-2.0/DEBUG/lib/libsc.so
+step-49: /usr/lib/x86_64-linux-gnu/libbz2.so
 step-49: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempif08.so
 step-49: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempi_ignore_tkr.so
 step-49: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_mpifh.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_pike-blackbox.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_trilinoscouplings.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_piro.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_rol.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos_muelu.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos_ifpack2.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos_amesos2.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos_tpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos_sacado.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stokhos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_rythmos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_muelu-adapters.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_muelu-interface.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_muelu.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_moertel.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_locathyra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_locaepetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_localapack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_loca.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_noxepetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_noxlapack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_nox.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_phalanx.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_intrepid.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teko.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikosbelos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikosaztecoo.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikosamesos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikosml.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_stratimikosifpack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_ifpack2-adapters.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_ifpack2.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_anasazitpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_ModeLaplace.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_anasaziepetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_anasazi.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_komplex.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_amesos2.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_shylu.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_belostpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_belosepetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_belos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_ml.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_ifpack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_zoltan2.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_pamgen_extras.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_pamgen.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_amesos.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_galeri-xpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_galeri-epetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_aztecoo.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_dpliris.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_isorropia.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_optipack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_xpetra-sup.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_xpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_thyratpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_thyraepetraext.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_thyraepetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_thyracore.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_epetraext.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetraext.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetrainout.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_kokkostsqr.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetrakernels.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetraclassiclinalg.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetraclassicnodeapi.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_tpetraclassic.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_triutils.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_globipack.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_shards.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_zoltan.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_epetra.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_sacado.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_rtop.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchoskokkoscomm.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchoskokkoscompat.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchosremainder.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchosnumerics.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchoscomm.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchosparameterlist.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_teuchoscore.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_kokkosalgorithms.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_kokkoscontainers.so
-step-49: /usr/lib/x86_64-linux-gnu/libtrilinos_kokkoscore.so
-step-49: /usr/lib/x86_64-linux-gnu/libsmumps.so
-step-49: /usr/lib/x86_64-linux-gnu/libdmumps.so
-step-49: /usr/lib/x86_64-linux-gnu/libcmumps.so
-step-49: /usr/lib/x86_64-linux-gnu/libzmumps.so
-step-49: /usr/lib/x86_64-linux-gnu/libpord.so
-step-49: /usr/lib/x86_64-linux-gnu/libmumps_common.so
-step-49: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
 step-49: /usr/lib/x86_64-linux-gnu/libtbb.so
 step-49: /usr/lib/x86_64-linux-gnu/libz.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libmuelu-adapters.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libmuelu-interface.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libmuelu.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteko.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikos.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikosbelos.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikosaztecoo.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikosamesos.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikosml.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libstratimikosifpack.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libifpack2-adapters.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libifpack2.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libanasazitpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libModeLaplace.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libanasaziepetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libanasazi.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libamesos2.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libbelostpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libbelosepetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libbelos.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libml.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libifpack.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libzoltan2.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libpamgen_extras.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libpamgen.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libamesos.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libgaleri-xpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libgaleri-epetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libaztecoo.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libisorropia.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libxpetra-sup.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libxpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libthyratpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libthyraepetraext.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libthyraepetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libthyracore.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libepetraext.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetraext.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetrainout.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libkokkostsqr.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetrakernels.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetraclassiclinalg.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetraclassicnodeapi.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtpetraclassic.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libtriutils.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libzoltan.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libepetra.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libsacado.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/librtop.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchoskokkoscomm.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchoskokkoscompat.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchosremainder.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchosnumerics.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchoscomm.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchosparameterlist.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libteuchoscore.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libkokkosalgorithms.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libkokkoscontainers.so
+step-49: /home/ljuba/deal.ii-candi/trilinos-release-12-10-1/lib/libkokkoscore.so
+step-49: /home/ljuba/deal.ii-candi/parmetis-4.0.3/lib/libparmetis.so
 step-49: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
 step-49: /usr/lib/x86_64-linux-gnu/libumfpack.so
 step-49: /usr/lib/x86_64-linux-gnu/libcholmod.so
@@ -198,6 +168,7 @@ step-49: /usr/lib/x86_64-linux-gnu/libcolamd.so
 step-49: /usr/lib/x86_64-linux-gnu/libcamd.so
 step-49: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
 step-49: /usr/lib/x86_64-linux-gnu/libamd.so
+step-49: /home/ljuba/deal.ii-candi/parmetis-4.0.3/lib/libmetis.so
 step-49: /usr/lib/x86_64-linux-gnu/libparpack.so
 step-49: /usr/lib/x86_64-linux-gnu/libarpack.so
 step-49: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
@@ -210,44 +181,42 @@ step-49: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 step-49: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 step-49: /usr/lib/x86_64-linux-gnu/libgsl.so
 step-49: /usr/lib/x86_64-linux-gnu/libgslcblas.so
-step-49: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/lib/libhdf5_hl.so
-step-49: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/lib/libhdf5.so
+step-49: /home/ljuba/deal.ii-candi/hdf5-1.10.1/lib/libhdf5_hl.so
+step-49: /home/ljuba/deal.ii-candi/hdf5-1.10.1/lib/libhdf5.so
 step-49: /usr/lib/x86_64-linux-gnu/libmuparser.so
 step-49: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
 step-49: /usr/lib/x86_64-linux-gnu/libnetcdf.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKBO.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKBool.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKBRep.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKernel.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKFeat.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKFillet.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKG2d.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKG3d.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKGeomAlgo.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKGeomBase.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKHLR.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKIGES.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKMath.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKMesh.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKOffset.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKPrim.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKShHealing.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKSTEP.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKSTEPAttr.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKSTEPBase.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKSTL.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKTopAlgo.so
-step-49: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
-step-49: /usr/lib/x86_64-linux-gnu/libp4est.so
-step-49: /usr/lib/x86_64-linux-gnu/libsc.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKBO.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKBool.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKBRep.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKernel.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKFeat.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKFillet.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKG2d.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKG3d.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKGeomAlgo.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKGeomBase.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKHLR.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKIGES.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKMath.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKMesh.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKOffset.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKPrim.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKShHealing.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKSTEP.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKSTEPAttr.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKSTEPBase.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKSTEP209.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKSTL.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKTopAlgo.so
+step-49: /home/ljuba/deal.ii-candi/oce-OCE-0.18.2/lib/libTKXSBase.so
 step-49: /usr/lib/x86_64-linux-gnu/liblapack.so
 step-49: /usr/lib/x86_64-linux-gnu/libblas.so
 step-49: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 step-49: /usr/lib/x86_64-linux-gnu/libslepc.so
 step-49: /usr/lib/x86_64-linux-gnu/libpetsc.so
 step-49: CMakeFiles/step-49.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ljuba/Git/Grid/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable step-49"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ljuba/dealii/examples/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable step-49"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/step-49.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -264,6 +233,6 @@ CMakeFiles/step-49.dir/clean:
 .PHONY : CMakeFiles/step-49.dir/clean
 
 CMakeFiles/step-49.dir/depend:
-	cd /home/ljuba/Git/Grid/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49/CMakeFiles/step-49.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljuba/dealii/examples/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49/CMakeFiles/step-49.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/step-49.dir/depend
 

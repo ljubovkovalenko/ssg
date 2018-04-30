@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_SOURCE_DIR = /home/ljuba/dealii/examples/step-49
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_BINARY_DIR = /home/ljuba/dealii/examples/step-49
 
 # Utility rule file for info.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
 include CMakeFiles/info.dir/progress.make
 
 CMakeFiles/info:
-	/usr/bin/cmake -P /home/ljuba/Git/Grid/step-49/CMakeFiles/print_usage.cmake
+	/usr/bin/cmake -P /home/ljuba/dealii/examples/step-49/CMakeFiles/print_usage.cmake
 
 info: CMakeFiles/info
 info: CMakeFiles/info.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/info.dir/clean:
 .PHONY : CMakeFiles/info.dir/clean
 
 CMakeFiles/info.dir/depend:
-	cd /home/ljuba/Git/Grid/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49/CMakeFiles/info.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljuba/dealii/examples/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49/CMakeFiles/info.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/info.dir/depend
 

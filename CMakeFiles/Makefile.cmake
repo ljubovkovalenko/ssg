@@ -7,6 +7,16 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/lib/cmake/deal.II/deal.IIConfig.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/lib/cmake/deal.II/deal.IIConfigVersion.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/lib/cmake/deal.II/deal.IITargets-debugrelease.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/lib/cmake/deal.II/deal.IITargets.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_add_test.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_initialize_cached_variables.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_invoke_autopilot.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_pickup_tests.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_query_git_information.cmake"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/share/deal.II/macros/macro_deal_ii_setup_target.cmake"
   "CMakeFiles/3.9.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.1/CMakeSystem.cmake"
@@ -31,16 +41,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.9/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.9/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
-  "/usr/share/cmake/deal.II/deal.IIConfig.cmake"
-  "/usr/share/cmake/deal.II/deal.IIConfigVersion.cmake"
-  "/usr/share/cmake/deal.II/deal.IITargets-debugrelease.cmake"
-  "/usr/share/cmake/deal.II/deal.IITargets.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_add_test.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_initialize_cached_variables.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_invoke_autopilot.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_pickup_tests.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_query_git_information.cmake"
-  "/usr/share/deal.ii/macros/macro_deal_ii_setup_target.cmake"
   )
 
 # The corresponding makefile is:

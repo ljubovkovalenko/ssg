@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_SOURCE_DIR = /home/ljuba/dealii/examples/step-49
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_BINARY_DIR = /home/ljuba/dealii/examples/step-49
 
 # Utility rule file for strip_comments.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
 include CMakeFiles/strip_comments.dir/progress.make
 
 CMakeFiles/strip_comments:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ljuba/Git/Grid/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ljuba/dealii/examples/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
 	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' step-49.cc
 
 strip_comments: CMakeFiles/strip_comments
@@ -72,6 +72,6 @@ CMakeFiles/strip_comments.dir/clean:
 .PHONY : CMakeFiles/strip_comments.dir/clean
 
 CMakeFiles/strip_comments.dir/depend:
-	cd /home/ljuba/Git/Grid/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljuba/dealii/examples/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/strip_comments.dir/depend
 

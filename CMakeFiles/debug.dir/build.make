@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_SOURCE_DIR = /home/ljuba/dealii/examples/step-49
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
+CMAKE_BINARY_DIR = /home/ljuba/dealii/examples/step-49
 
 # Utility rule file for debug.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/ljuba/Git/Grid/step-49
 include CMakeFiles/debug.dir/progress.make
 
 CMakeFiles/debug:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ljuba/Git/Grid/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Switch CMAKE_BUILD_TYPE to Debug"
-	/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug /home/ljuba/Git/Grid/step-49
-	/usr/bin/cmake --build /home/ljuba/Git/Grid/step-49 --target all
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ljuba/dealii/examples/step-49/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Switch CMAKE_BUILD_TYPE to Debug"
+	/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug /home/ljuba/dealii/examples/step-49
+	/usr/bin/cmake --build /home/ljuba/dealii/examples/step-49 --target all
 
 debug: CMakeFiles/debug
 debug: CMakeFiles/debug.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/debug.dir/clean:
 .PHONY : CMakeFiles/debug.dir/clean
 
 CMakeFiles/debug.dir/depend:
-	cd /home/ljuba/Git/Grid/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49 /home/ljuba/Git/Grid/step-49/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljuba/dealii/examples/step-49 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49 /home/ljuba/dealii/examples/step-49/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/debug.dir/depend
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ljuba/Git/Grid/step-49/step-49.cc" "/home/ljuba/Git/Grid/step-49/CMakeFiles/step-49.dir/step-49.cc.o"
+  "/home/ljuba/dealii/examples/step-49/step-49.cc" "/home/ljuba/dealii/examples/step-49/CMakeFiles/step-49.dir/step-49.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,17 +15,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/deal.II/bundled"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/include"
+  "/home/ljuba/deal.ii-candi/deal.II-v8.5.1/include/deal.II/bundled"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include"
   "/usr/lib/x86_64-linux-gnu/openmpi/include"
-  "/usr/include/trilinos"
-  "/usr/include/hdf5/openmpi"
+  "/home/ljuba/deal.ii-candi/parmetis-4.0.3/include"
+  "/home/ljuba/deal.ii-candi/trilinos-release-12-10-1/include"
   "/usr/include/suitesparse"
   "/usr/include/petsc"
-  "/usr/lib/x86_64-linux-gnu/hdf5/openmpi/include"
-  "/usr/include/oce"
+  "/home/ljuba/deal.ii-candi/hdf5-1.10.1/include"
+  "/home/ljuba/deal.ii-candi/oce-OCE-0.18.2/include/oce"
+  "/home/ljuba/deal.ii-candi/p4est-2.0/FAST/include"
   "/usr/include/slepc"
   )
 
