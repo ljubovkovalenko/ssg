@@ -56,7 +56,7 @@ Point<3> grid_5_transform_1 (const Point<3> &in)
 
 Point<3> grid_5_transform_2 (const Point<3> &in)
  {
- return Point<3>(abs(in(0)*sin(in(1))*cos(in(2))),
+ return Point<3>(-abs(in(0)*sin(in(1))*cos(in(2))),
                in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
   //return Point<3>(in(0),in(1),in(2));
 }
@@ -65,7 +65,7 @@ Point<3> grid_5_transform_2 (const Point<3> &in)
 void grid_5()
 {
 
-  Point<3> point_1;
+ 
 
   Triangulation<3> tria1;
   std::vector<unsigned int> repetitions1(3);
@@ -88,7 +88,7 @@ GridTools::transform(&grid_5_transform_1, tria1);
                                         Point<3>(0.0,0.0,0.0));
   GridTools::transform(&grid_5_transform_2, tria2);
 
- /Triangulation<3> triangulation;
+ Triangulation<3> triangulation;
  GridGenerator::merge_triangulations (tria1, tria2, triangulation);
   print_mesh_info(triangulation, "grid-5.vtk");
 }
