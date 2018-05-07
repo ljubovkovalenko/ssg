@@ -47,16 +47,26 @@ void print_mesh_info(const Triangulation<dim> &tria,
             << std::endl;
 }
 
-Point<3> grid_5_transform (const Point<3> &in)
+Point<3> grid_5_transform_1 (const Point<3> &in)
 {
- //return Point<3>(abs(in(0)*sin(in(1))*cos(in(2))),
- //                in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
-  return Point<3>(in(0),in(1),in(2));
+ return Point<3>(abs(in(0)*sin(in(1))*cos(in(2))),
+                 in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
+  //return Point<3>(in(0),in(1),in(2));
+}
+
+Point<3> grid_5_transform_2 (const Point<3> &in)
+ {
+ return Point<3>(abs(in(0)*sin(in(1))*cos(in(2))),
+               in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
+  //return Point<3>(in(0),in(1),in(2));
 }
 
 
 void grid_5()
 {
+
+  Point<3> point_1;
+
   Triangulation<3> tria1;
   std::vector<unsigned int> repetitions1(3);
   repetitions1[0] = 10;
@@ -65,21 +75,21 @@ void grid_5()
   GridGenerator::subdivided_hyper_rectangle (tria1, repetitions1,
                                              Point<3>(0.0,0.0,0.0),
                                              Point<3>(5.0,5.0,5.0));
-GridTools::transform(&grid_5_transform, tria1);
+GridTools::transform(&grid_5_transform_1, tria1);
 
   Triangulation<3> tria2;
 
-  std::vector<unsigned int> repetitions2(3);
-  repetitions2[0] = 10;
-  repetitions2[1] = 10;
-  repetitions2[2] = 10;
-  GridGenerator::subdivided_hyper_rectangle (tria2, repetitions2,
-                                             Point<3>(-5.0,5.0,5.0),
-                                             Point<3>(0.0,0.0,0.0));
-  GridTools::transform(&grid_5_transform, tria2);
+ std::vector<unsigned int> repetitions2(3);
+ repetitions2[0] = 10;
+ repetitions2[1] = 10;
+ repetitions2[2] = 10;
+ GridGenerator::subdivided_hyper_rectangle (tria2, repetitions2,
+                                          Point<3>(-5.0,5.0,5.0),
+                                        Point<3>(0.0,0.0,0.0));
+  GridTools::transform(&grid_5_transform_2, tria2);
 
-  Triangulation<3> triangulation;
-  GridGenerator::merge_triangulations (tria1, tria2, triangulation);
+ /Triangulation<3> triangulation;
+ GridGenerator::merge_triangulations (tria1, tria2, triangulation);
   print_mesh_info(triangulation, "grid-5.vtk");
 }
 
