@@ -47,25 +47,25 @@ void print_mesh_info(const Triangulation<dim> &tria,
             << std::endl;
 }
 
+const double  pi      = 3.14159265358979323846;
+
 Point<3> grid_5_transform_1 (const Point<3> &in)
 {
- return Point<3>(abs(in(0)*sin(in(1))*cos(in(2))),
-                 in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
-  //return Point<3>(in(0),in(1),in(2));
+ return Point<3>(in(0)*sin(in(1)*pi)*cos(in(2)*pi),
+                 in(0)*sin(in(1)*pi)*sin(in(2)*pi),in(0)*cos(in(1)*pi));
+ // return Point<3>(in(0),in(1),in(2));
 }
 
 Point<3> grid_5_transform_2 (const Point<3> &in)
  {
- return Point<3>(-abs(in(0)*sin(in(1))*cos(in(2))),
-               in(0)*sin(in(1))*sin(in(2)),in(0)*cos(in(1)));
-  //return Point<3>(in(0),in(1),in(2));
+ return Point<3>(in(0)*sin(in(1)*pi)*cos(in(2)*pi),
+               in(0)*sin(in(1)*pi)*sin(in(2)*pi),in(0)*cos(in(1)*pi));
+ // return Point<3>(in(0),in(1),in(2));
 }
 
 
 void grid_5()
 {
-
- 
 
   Triangulation<3> tria1;
   std::vector<unsigned int> repetitions1(3);
@@ -74,8 +74,9 @@ void grid_5()
   repetitions1[2] = 10;
   GridGenerator::subdivided_hyper_rectangle (tria1, repetitions1,
                                              Point<3>(0.0,0.0,0.0),
-                                             Point<3>(5.0,5.0,5.0));
+                                             Point<3>(1.0,1.0,1.0));
 GridTools::transform(&grid_5_transform_1, tria1);
+
 
   Triangulation<3> tria2;
 
@@ -84,8 +85,8 @@ GridTools::transform(&grid_5_transform_1, tria1);
  repetitions2[1] = 10;
  repetitions2[2] = 10;
  GridGenerator::subdivided_hyper_rectangle (tria2, repetitions2,
-                                          Point<3>(-5.0,5.0,5.0),
-                                        Point<3>(0.0,0.0,0.0));
+                                          Point<3>(-1.0,1.0,1.0),
+                                       Point<3>(0.0,0.0,0.0));
   GridTools::transform(&grid_5_transform_2, tria2);
 
  Triangulation<3> triangulation;
